@@ -19,7 +19,7 @@
     <!--Container to hold all the separate info blocks-->
     <div class="container">
         <!-- about me section-->
-        <div class="about_me">
+        <section class="about_me">
             <h2 class="abm">About Me</h2>
             <div id="prof_am"></div>
                 <div class="photo">
@@ -31,9 +31,9 @@
             <div id="game_am">
                     <p class="g_am"> this is game text test.</p>
             </div>
-        </div>
+        </section>
         <!-- skills section-->
-        <div class="skills">
+        <section class="skills">
             <h2>Skills</h2>
             <div id="prof_s">
                 <item class="html">
@@ -56,17 +56,39 @@
             <div id="game_s">
                 <p> These are test game skills.</p>
             </div>
-        </div>
+        </section>
         <!--  projects section-->
-        <div class="projects">
+        <section class="projects">
             <h2>Projects</h2>
             <div id="prof_p">
-                <p> these are test projects</p>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://cdn-icons-png.flaticon.com/512/136/136528.png" style="width:100%">
+                        <div class="text"> Test 1</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://cdn-icons-png.flaticon.com/512/180/180841.png" style="width:100%">
+                        <div class="text"> Test 2</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://cdn-icons-png.flaticon.com/512/136/136530.png" style="width:100%">
+                        <div class="text"> Test 3</div>
+                    </div>
+                    <!-- next and previous buttons-->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095</a>
+                </div>
             </div>
             <div id="game_p">
                 <p> these are test game projects</p>
             </div>
-        </div>
+            <!-- navigation buttons-->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
     </div> <!-- container div closing tag-->
     <footer>
         <!-- Contact info and social media icons -->
