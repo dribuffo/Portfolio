@@ -11,14 +11,29 @@ h2 {
 /*
         HEADER 
 */ 
+header {
+    display: inline-flex;
+    background-color: orange;
+}
+/*
+        HEADER: Hamburger Menu
+*/
+.navbar {
+    align-items: center;
+}
+
+ul {
+    display: none;
+}
 
 
 /*
-        Style slider button
+        HEADER: Style slider button
 */
 .theme-switch-container {
     display: flex;
     align-items: center;
+    gap:265px;
 }
 
 .theme-slider {
@@ -282,6 +297,7 @@ footer {
     background-color: yellow;
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 /*
@@ -299,10 +315,14 @@ footer {
         text-align: center;
         grid-row: 3;
     }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
     
 }
-
-
 
 /*
             DESKTOP SCREEN
@@ -319,5 +339,11 @@ footer {
         text-align: center;
         grid-row: 3;
     }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
     
 }

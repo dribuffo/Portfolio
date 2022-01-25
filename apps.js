@@ -41,13 +41,15 @@ function switchTheme(e) {
 
 	/* Once checkbox is checked default theme change to dark */
 	if (e.target.checked) {
-		document.documentElement.setAttribute('theme', 'dark');
+		document.documentElement.setAttribute('theme', 'gamer');
+        $('slide_text').html("Swap to Professional mode.")
 	}
 
 	/* While page in dark mode and checkbox is
 	checked then theme back to change light*/
 	else {
-		document.documentElement.setAttribute('theme', 'light');
+		document.documentElement.setAttribute('theme', 'professional');
+        $('slide_text').html("Swap to Gamer mode.")
 	}
 }
 

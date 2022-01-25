@@ -110,8 +110,9 @@ Python icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-lo
 
 e-mail symbol: http://www.stickpng.com/img/icons-logos-emojis/email-icons/email-icon-orange
 
-linked in symbol: https://blog-assets.hootsuite.com/wp-content/uploads/2018/09/In-2C-54px-R.png"
+linked in symbol: https://blog-assets.hootsuite.com/wp-content/uploads/2018/09/In-2C-54px-R.png
 
+hamburger menu: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png
 
 ###### Code Chunks
 ```
