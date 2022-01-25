@@ -291,5 +291,93 @@ Above code used to make the image carousel in the projects section, found on w3s
 ```
 Above code was found on w3schools
 
+```
+<div class="theme-switch-container">
+                <label class="theme-slider" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="round slider"></div>
+                </label>
+                 
+ 
+<p>use this slider to change theme</p>
+ 
+ 
+            </div>
+
+.theme-switch-container {
+    display: flex;
+    align-items: center;
+}
+ 
+.theme-slider {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+ 
+.theme-slider input {
+    display: none;
+}
+ 
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+ 
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+ 
+input:checked+.slider {
+    background-color: #66bb6a;
+}
+ 
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+ 
+.slider.round {
+    border-radius: 34px;
+}
+ 
+.slider.round:before {
+    border-radius: 50%;
+}
+
+const toggleSwitch =
+    document.querySelector('.theme-slider input[type="checkbox"]');
+ 
+/* Function to change theme */
+function switchTheme(e) {
+ 
+    /* Once checkbox is checked default theme change to dark */
+    if (e.target.checked) {
+        document.documentElement.setAttribute('theme', 'dark');
+    }
+ 
+    /* While page in dark mode and checkbox is
+    checked then theme back to change light*/
+    else {
+        document.documentElement.setAttribute('theme', 'light');
+    }
+}
+ 
+toggleSwitch.addEventListener('change', switchTheme, false);
+```
+Above code used to make theme slider was copied from [Geekforgeeks.org](https://www.geeksforgeeks.org/how-to-create-dark-theme-using-slider-in-css/).
 
 # Portfolio-Webpage
