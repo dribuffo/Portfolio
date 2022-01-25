@@ -98,6 +98,22 @@ It will be coded using HTML, CSS, Javascript and will include at least 1 of: ani
 
 ## Contributions and Attributions
 ---
+
+###### Images and Icons
+HTML icon: https://cdn-icons-png.flaticon.com/512/136/136528.png
+
+CSS icon: https://cdn-icons-png.flaticon.com/512/180/180841.png
+
+Javascript icon: https://cdn-icons-png.flaticon.com/512/136/136530.png
+
+Python icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png
+
+e-mail symbol: http://www.stickpng.com/img/icons-logos-emojis/email-icons/email-icon-orange
+
+linked in symbol: https://blog-assets.hootsuite.com/wp-content/uploads/2018/09/In-2C-54px-R.png"
+
+
+###### Code Chunks
 ```
    width: 200px;
     height: 300px;
@@ -107,14 +123,6 @@ It will be coded using HTML, CSS, Javascript and will include at least 1 of: ani
 }
 ```
 The above code was used from [stack overflow](https://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image) to help get my headshot to have an oval border.
-
-HTML icon: https://cdn-icons-png.flaticon.com/512/136/136528.png
-
-CSS icon: https://cdn-icons-png.flaticon.com/512/180/180841.png
-
-Javascript icon: https://cdn-icons-png.flaticon.com/512/136/136530.png
-
-Python icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png
 
 ```
 /* Slideshow container */
@@ -274,7 +282,14 @@ function showSlides(n) {
 }
 </script>
 ```
-Above code used to make the image carousel in the projects section
+Above code used to make the image carousel in the projects section, found on w3schools
+
+```
+<a href="mailto:someone@example.com">
+    <img src="" alt="">
+</a>
+```
+Above code was found on w3schools
 
 
 # Portfolio-Webpage
