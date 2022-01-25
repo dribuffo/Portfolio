@@ -1,6 +1,7 @@
 h2 {
     text-align: left;
     font-family: "Oswald", sans-serif;
+    margin-left: 20px;
 }
 
 .container {
@@ -9,23 +10,124 @@ h2 {
     display: grid;
 }
 
+/*
+        ABOUT ME section
+*/
 .about_me {
-    background-color: pink;    
+    background-color: red;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    display: grid;
 }
+
+.photo {
+    grid-column: 1;
+    grid-row: 2;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: pink;
+    place-self: center;
+}
+
+.p_am {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: pink;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+#game_am {
+    display: none;
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 50px;
+}
+
+/*
+        SKILLS section
+*/
 
 .skills {
     background-color: blue;
-    grid-template-columns: 3;
-    grid-template-rows: 1;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
     display: grid;
 }
+
+#prof_s {
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    display: grid;
+    background-color: lightblue;
+    justify-items: space-evenly;
+    padding-top: 20px;
+}
+
+.html {
+    grid-column: 1;
+    grid-row: 2;
+    place-self: center;
+    text-align: center;
+}
+
+.css {
+    grid-column: 2;
+    grid-row: 2;
+    place-self: center;
+    text-align: center;
+}
+
+.javascript {
+    grid-column: 3;
+    grid-row: 2;
+
+    place-self: center;
+    text-align: center;
+}
+
+.python {
+    grid-column: 1;
+    grid-row: 3;
+    place-self: center;
+    text-align: center;
+}
+
+#game_s {
+    display: none;
+    grid-row: 2;
+}
+
+.p_prof_s {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+/*
+        PROJECTS section
+*/
 
 .projects {
     background-color: green;
     grid-template-columns: 2;
-    grid-template-rows: 1;
+    grid-template-rows: 2;
     display: grid;
 }
+
+#prof_p {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#game_p {
+    display: none;
+    grid-column: 2;
+    grid-row: 2;
+}
+
 
 /*
             TABLET SCREEN 

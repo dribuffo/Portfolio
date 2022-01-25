@@ -99,6 +99,22 @@ It will be coded using HTML, CSS, Javascript and will include at least 1 of: ani
 ## Contributions and Attributions
 ---
 ```
+   width: 200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
 ```
+The above code was used from [stack overflow](https://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image) to help get my headshot to have an oval border.
+
+HTML icon: https://cdn-icons-png.flaticon.com/512/136/136528.png
+
+CSS icon: https://cdn-icons-png.flaticon.com/512/180/180841.png
+
+Javascript icon: https://cdn-icons-png.flaticon.com/512/136/136530.png
+
+Python icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png
+
 
 # Portfolio-Webpage
