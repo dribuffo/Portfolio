@@ -1,3 +1,43 @@
-body {
-    background-color: black;
+h2 {
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    display: grid;
+}
+
+.about_me {
+    background-color: pink;    
+}
+
+.skills {
+    background-color: blue;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    display: grid;
+}
+
+.projects {
+    background-color: green;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    display: grid;
+}
+
+/*
+            TABLET SCREEN 
+*/
+@media only screen and (min-width: 768px){
+
+}
+
+
+/*
+            DESKTOP SCREEN
+*/
+@media only screen and (min-width: 1024px) {
+
 }
