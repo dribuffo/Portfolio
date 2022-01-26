@@ -6,8 +6,6 @@ h2 {
     text-align: left;
     font-family: "Oswald", sans-serif;
     margin-left: 20px;
-    grid-column: 1;
-    grid-row: 1;
 }
 /*-------------------------------------------------------------*/
 /*
@@ -17,20 +15,31 @@ button {
     background-color: purple;
 }
 
+/* .hamburger {
+    background-color: brown;
+} */
+
 /*-------------------------------------------------------------*/
 /*
         HEADER 
 */ 
 header {
-    display: inline-flex;
     background-color: orange;
+    color: black;
 }
 /*-------------------------------------------------------------*/
 /*
-        HEADER: Hamburger Menu
+        HEADER: Menu
 */
 .navbar {
-    align-items: center;
+    display: grid;
+    grid-column: 1;
+}
+
+.header_text {
+    display: grid; 
+    grid-column: 2;
+    grid-row: 1;
 }
 
 ul {
@@ -39,12 +48,11 @@ ul {
 
 /*-------------------------------------------------------------*/
 /*
-        HEADER: Style slider button
+        HEADER: Style slider button + text
 */
 .theme-switch-container {
-    display: flex;
-    align-items: center;
-    gap:265px;
+    display: grid;
+    grid-template-columns: 2;
 }
 
 .theme-slider {
@@ -324,24 +332,34 @@ footer {
             TABLET SCREEN 
 */
 @media only screen and (min-width: 768px){
-
-    .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
+    /*
+            About me section
+    */
+    .about_me {
+        background-color: brown;
+        grid-template-columns: 2;
+        grid-template-rows: 3;
+        display: grid;
+    }
+    
+    .photo {
+        grid-column: 1;
         grid-row: 3;
     }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
     
+    .p_am {
+        grid-column: 2;
+        grid-row: 3;
+    }    
+
+    /*
+            Projects section
+    */
+    .project1{
+        height: 150px;
+    }
+
+
 }
 
 /*
