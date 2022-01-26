@@ -1,4 +1,19 @@
 /*
+        ARROW BUTTONS
+*/
+function aboutMeArrow() {
+
+}
+
+function skillsArrow() {
+    
+}
+
+function projectsArrow() {
+    
+}
+
+/*
         SLIDESHOW CONTAINER
 */
 var slideIndex = 1;
@@ -29,6 +44,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
 
 /*
         Style Swap Slider

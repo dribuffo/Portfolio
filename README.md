@@ -114,6 +114,8 @@ linked in symbol: https://blog-assets.hootsuite.com/wp-content/uploads/2018/09/I
 
 hamburger menu: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png
 
+down arrow: https://www.clipartmax.com/png/middle/53-531844_elegant-picture-of-a-arrow-pointing-down-arrow-pointing-arrow-pointing-down.png
+
 ###### Code Chunks
 ```
    width: 200px;

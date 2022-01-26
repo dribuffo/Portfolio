@@ -6,8 +6,18 @@ h2 {
     text-align: left;
     font-family: "Oswald", sans-serif;
     margin-left: 20px;
+    grid-column: 1;
+    grid-row: 1;
+}
+/*-------------------------------------------------------------*/
+/*
+        BUTTON styling
+*/
+button {
+    background-color: purple;
 }
 
+/*-------------------------------------------------------------*/
 /*
         HEADER 
 */ 
@@ -15,6 +25,7 @@ header {
     display: inline-flex;
     background-color: orange;
 }
+/*-------------------------------------------------------------*/
 /*
         HEADER: Hamburger Menu
 */
@@ -26,7 +37,7 @@ ul {
     display: none;
 }
 
-
+/*-------------------------------------------------------------*/
 /*
         HEADER: Style slider button
 */
@@ -84,7 +95,7 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
-
+/*-------------------------------------------------------------*/
 /*
         SECTION CONTAINER
 */
@@ -95,6 +106,12 @@ input:checked+.slider:before {
     display: grid;
 }
 
+.arrow {
+    grid-column: 1;
+    grid-row: 2;
+    justify-items: end;
+}
+/*-------------------------------------------------------------*/
 /*
         ABOUT ME section
 */
@@ -107,7 +124,7 @@ input:checked+.slider:before {
 
 .photo {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
     width: 200px;
     height: 300px;
     position: relative;
@@ -123,7 +140,7 @@ input:checked+.slider:before {
 
 .p_am {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
     background-color: pink;
     color: black;
     font-family:'Courier New', Courier, monospace;
@@ -132,9 +149,9 @@ input:checked+.slider:before {
 #game_am {
     display: none;
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
 }
-
+/*-------------------------------------------------------------*/
 /*
         SKILLS section
 */
@@ -193,27 +210,26 @@ input:checked+.slider:before {
     color: black;
     font-family: 'Orbitron', sans-serif;
 }
+/*-------------------------------------------------------------*/
 /*
         PROJECTS section
 */
-
-
 .projects {
     background-color: green;
     grid-template-columns: 1;
-    grid-template-rows: 2;
+    grid-template-rows: 3;
     display: grid;
 }
 
 #prof_p {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 #game_p {
     display: none;
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 /*
@@ -290,6 +306,7 @@ input:checked+.slider:before {
     to {opacity: 1}
   }
 
+/*-------------------------------------------------------------*/
 /*
             FOOTER SECTION
 */
@@ -300,6 +317,7 @@ footer {
     gap: 10px;
 }
 
+/*-------------------------------------------------------------*/
 /*
             TABLET SCREEN 
 */
