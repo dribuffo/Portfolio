@@ -41,14 +41,15 @@
         <!-- about me section-->
         <section class="about_me">
             <h2 class="abm">About Me</h2>
-                <button class="arrow" onclick="skillsArrow()"><img src="doublearrow.png" width="50" height="50"></button>
-            <div id="prof_am"></div>
+                <button class="arrow" onclick="aboutMeArrow()"><img src="doublearrow.png" width="50" height="50"></button>
+            <div id="prof_am">
                 <div class="photo">
                     <img src="https://lh3.googleusercontent.com/-WUj2AxFtFzfZSjzc7aYMVpC_Kvp50jApN0oJSJGycBVYEJdt4HzK6pb8v8H0N_xtqfaKld3BhB0Rdojg1j1bwrW7xZPuYKwz3C5S-dHTJzkeghbOzvy1Kj6o27zpW_P1sYj-fTj=w2400" alt="head shot" width="200" height="300"> <!-- standard size is 200 x 300-->
                 </div>
                 <p class="p_am">
                     Software Developer and fledgling game designer with a <em>app</em>etite to learn and standing in front of the buffet of the world. Skilled in logstics management, hardware assembly, and with a proven skill of handling himself under pressure.
                 </p>
+            </div>
             <div id="game_am">
                     <p class="g_am"> this is game text test.</p>
             </div>
@@ -82,7 +83,7 @@
         <!--  projects section-->
         <section class="projects">
             <h2>Projects</h2>
-                <button class="arrow" onclick="skillsArrow()"><img src="doublearrow.png" width="50" height="50"></button>
+                <button class="arrow" onclick="projectsArrow()"><img src="doublearrow.png" width="50" height="50"></button>
             <div id="prof_p">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
@@ -100,17 +101,18 @@
                     <!-- next and previous buttons-->
                     <a class="prev" onclick="plusSlides(-1)">&#10094</a>
                     <a class="next" onclick="plusSlides(1)">&#10095</a>
+                    <!-- navigation buttons-->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
                 </div>
             </div>
             <div id="game_p">
                 <p> these are test game projects</p>
             </div>
-            <!-- navigation buttons-->
-            <div style="text-align: center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+            
         </section>
     </div> <!-- container div closing tag-->
     <footer>

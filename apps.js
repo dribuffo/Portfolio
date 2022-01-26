@@ -2,17 +2,25 @@
         ARROW BUTTONS
 */
 function aboutMeArrow() {
-
+    $("#prof_am").show();
+    $("#prof_s").hide();
+    $("#prof_p").hide();
 }
 
 function skillsArrow() {
-    
+    $("#prof_am").hide();
+    $("#prof_s").show();
+    $("#prof_p").hide();
 }
 
 function projectsArrow() {
-    
+    $("#prof_am").hide();
+    $("#prof_s").hide();
+    $("#prof_p").show();
 }
 
+
+//----------------------------------------------------------------------
 /*
         SLIDESHOW CONTAINER
 */
@@ -46,9 +54,7 @@ function showSlides(n) {
 }
 
 
-
-
-
+//----------------------------------------------------------------------
 /*
         Style Swap Slider
 */

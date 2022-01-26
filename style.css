@@ -122,7 +122,7 @@ input:checked+.slider:before {
     display: grid;
 }
 
-.photo {
+.about_me .photo {
     grid-column: 1;
     grid-row: 3;
     width: 200px;
@@ -130,26 +130,26 @@ input:checked+.slider:before {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    place-self: center;
-}
-
-#prof_am {
-    padding: 0;
-    margin: 0;
+    margin-left: 80px;
+    margin-top:10px;
 }
 
 .p_am {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
     background-color: pink;
     color: black;
     font-family:'Courier New', Courier, monospace;
 }
 
+#prof_am {
+    display: none;
+}
+
 #game_am {
     display: none;
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
 }
 /*-------------------------------------------------------------*/
 /*
@@ -164,9 +164,9 @@ input:checked+.slider:before {
 }
 
 #prof_s {
+    display: grid;
     grid-template-columns: 3;
     grid-template-rows: 2;
-    display: grid;
     background-color: lightblue;
     justify-items: space-evenly;
     padding-top: 20px;
@@ -210,6 +210,7 @@ input:checked+.slider:before {
     color: black;
     font-family: 'Orbitron', sans-serif;
 }
+
 /*-------------------------------------------------------------*/
 /*
         PROJECTS section
@@ -224,6 +225,7 @@ input:checked+.slider:before {
 #prof_p {
     grid-column: 1;
     grid-row: 3;
+    display: none;
 }
 
 #game_p {
