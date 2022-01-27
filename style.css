@@ -426,16 +426,18 @@ footer {
     */
 
     .about_me_container {
+        display: grid;
         grid-template-columns: 4;
         grid-template-rows: 4;
     }
 
     .photo {
+        display: grid;
         grid-column: 2;
         grid-row: 2;
     }
     .background_photo {
-        background-image: url(AnchorageSpring.jpg);
+        visibility: hidden;
     }
     .about_me_text {
         grid-column: 3;
@@ -449,18 +451,6 @@ footer {
     /*
                 Projects Section
     */
-    .next {
-        display: none;
-    }
-
-    .prev {
-        display: none;
-    }
-
-    .dot {
-        display: none;
-    }
-
     .projects{
         display: grid;
         grid-template-columns: 3;
@@ -482,6 +472,17 @@ footer {
         grid-row: 2;
     }
 
+    .next {
+        display: none;
+    }
+
+    .prev {
+        display: none;
+    }
+
+    .dot {
+        display: none;
+    }
 
     /*
                 Footer Section
@@ -492,6 +493,11 @@ footer {
     }
     .foottext {
         flex-grow: 2;
+        margin-left: 10px;
+    }
+
+    .linkedin {
+        margin-right: 10px;
     }
 }
 
