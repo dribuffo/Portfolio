@@ -469,13 +469,22 @@ footer {
     */
 
     .skills {
-        background-image: url(anchorageDusk.jpg);
+        background-image: url(anchorageNight.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%
     }
 
     .skill_list {
         background-color: transparent;
+    }
+    
+    item {
+        background-color: darkblue;
+        width: 150px;
+        height: 150px;
+        padding-top: 50px;
+        overflow: hidden;
+        border-radius: 50%;
     }
 
     .skill_list_text {
@@ -486,7 +495,7 @@ footer {
                 Projects Section
     */
     .projects {
-    background-image: url(anchorageNight.jpg);
+    background-image: url(anchorageDusk.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     }
