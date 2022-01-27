@@ -19,6 +19,7 @@ function projectsArrow() {
   $(".slideshow-container").show();
 }
 
+
 //----------------------------------------------------------------------
 /*
       SLIDESHOW CONTAINER
@@ -77,3 +78,5 @@ else {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+//---------------------------------------------------------------------
