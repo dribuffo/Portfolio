@@ -491,8 +491,11 @@ footer {
     background-size: 100% 100%;
     }
 
+
     .slideshow-container{
+        align-items: start;
         background-color: transparent;
+        padding-bottom: 10px;
     }
 
     .prev, .next {
@@ -501,9 +504,13 @@ footer {
 
     .text {
         visibility: visible;
-        color: white;
-        position: relative;
+        color: white;        
     }
+
+    #p_title {
+        color: white;
+    }
+
     /*
                 Footer Section
     */
