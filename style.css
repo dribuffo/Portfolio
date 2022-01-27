@@ -375,6 +375,10 @@ footer {
     .next {
         right: -100px;
     }
+
+    /*
+            Footer
+    */
     footer {
         font-size: 25px;
         align-items: center;
@@ -401,6 +405,7 @@ footer {
     }
     .theme-switch-container {
         background-color:rgb(140, 140, 243);
+        justify-self: right;
     }
     .slider_bar_text{
         background-color:rgb(140, 140, 243);
@@ -483,47 +488,22 @@ footer {
     .projects {
     background-image: url(anchorageNight.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%
+    background-size: 100% 100%;
     }
 
-    .slideshow-container {
-        display: grid;
-        grid-template-columns: 3;
-        grid-template-rows: 2;
+    .slideshow-container{
         background-color: transparent;
     }
 
-    #project_list_1 {
-        grid-column: 1/1;
-        grid-row: 2;
-    }
-
-    #project_list_2 {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    #project_list_3 {
-        grid-column: 3;
-        grid-row: 2;
+    .prev, .next {
+        visibility: hidden;
     }
 
     .text {
         visibility: visible;
+        color: white;
+        position: relative;
     }
-
-    .next {
-        display: none;
-    }
-
-    .prev {
-        display: none;
-    }
-
-    .dot {
-        display: none;
-    }
-
     /*
                 Footer Section
     */
