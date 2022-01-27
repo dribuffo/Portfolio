@@ -263,7 +263,7 @@ h2 {
 }
 
 .text {
-    display: none;
+    visibility: hidden;
 }
 
 .dot {
@@ -348,9 +348,7 @@ footer {
         grid-row: 1;
         margin-left: 20px;
     }
-    .background_photo {
-        display: none;
-    }
+
     .about_me_text {
         grid-column: 2;
         grid-row: 1;
@@ -398,6 +396,19 @@ footer {
     /*
                 Header
     */
+    header {
+        background-color:rgb(140, 140, 243);
+    }
+    .theme-switch-container {
+        background-color:rgb(140, 140, 243);
+    }
+    .slider_bar_text{
+        background-color:rgb(140, 140, 243);
+    }
+    .header_text {
+        background-color:rgb(140, 140, 243);
+    }
+
     .navbar{
         visibility: visible;
         grid-column: 2;
@@ -425,40 +436,65 @@ footer {
                 About Me Section
     */
 
+    .about_me {
+        background-image: url(AnchorageSpring.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
     .about_me_container {
         display: grid;
         grid-template-columns: 4;
         grid-template-rows: 4;
+        background-color: transparent;
     }
 
     .photo {
-        display: grid;
-        grid-column: 2;
-        grid-row: 2;
+        margin-bottom: 100px;
+        background-color: transparent;
     }
-    .background_photo {
-        visibility: hidden;
-    }
+
     .about_me_text {
-        grid-column: 3;
-        grid-row: 2;
+        color: black;
+        background-color: transparent;
     }
     
     /*
                 Skills Section
     */
 
+    .skills {
+        background-image: url(anchorageDusk.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%
+    }
+
+    .skill_list {
+        background-color: transparent;
+    }
+
+    .skill_list_text {
+        color: white;
+    }
+
     /*
                 Projects Section
     */
-    .projects{
+    .projects {
+    background-image: url(anchorageNight.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+    }
+
+    .slideshow-container {
         display: grid;
         grid-template-columns: 3;
         grid-template-rows: 2;
+        background-color: transparent;
     }
 
     #project_list_1 {
-        grid-column: 1;
+        grid-column: 1/1;
         grid-row: 2;
     }
 
@@ -470,6 +506,10 @@ footer {
     #project_list_3 {
         grid-column: 3;
         grid-row: 2;
+    }
+
+    .text {
+        visibility: visible;
     }
 
     .next {

@@ -116,6 +116,12 @@ hamburger menu: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hambur
 
 down arrow: https://www.clipartmax.com/png/middle/53-531844_elegant-picture-of-a-arrow-pointing-down-arrow-pointing-arrow-pointing-down.png
 
+Anchorage image: photo by Erik Judson, used with permission.
+
+anchorage at dusk image: attribution: "Photo by Didier Moïse"
+
+anchorage at night: free4kwallpapers.com
+
 ###### Code Chunks
 ```
    width: 200px;
