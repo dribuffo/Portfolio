@@ -75,9 +75,9 @@ if (e.target.checked) {
   document.documentElement.setAttribute('theme', 'gamer');
       /*Header*/
       $('.slider_bar_text').html("Swap to Professional mode.");
-      $('.slider_bar_text').css('color', 'white');
+      $('.slider_bar_text').css('color', 'grey');
       $('.header_text').html("I'm Daniel, welcome to my gaming portfolio!");
-      $('.header_text').css('color', 'white');
+      $('.header_text').css('color', 'grey');
       $('.navbar').hide();
       $('#hdr').css("background-color", "black");
       $('#tsc').css("background-color", "black");
@@ -87,14 +87,14 @@ if (e.target.checked) {
       $('.about_me').css("background-color", "black").css('background-image', 'none');
       $('.about_me_text').css("background-color", "black");
       $('.photo').hide();
-      $('.about_me h2').css('color', 'white');
+      $('.about_me h2').css('color', 'grey');
       $('.about_me_text').html("Hero. Villian. Honorary Ph.D majoring in Tonberries. I have been a lifelong gamer with a love of the MMO genre. Please see below for my various characters and links. Feel free to find me in game and say hello!");
-      $('.about_me_text').css("color", "white");
+      $('.about_me_text').css("color", "grey");
       /*Skills*/
       $('.skills').css("background-color", "black").css('background-image', 'none');
       $('.skill_list').css("background-color", "black")
       $('.skills h2').html("Games Playing");
-      $('.skills').css('color', 'white');
+      $('.skills').css('color', 'grey');
       $('item').css('border-radius', '0%');
       $('item').css('background-color','black')
                     /*skill list > Games playing changes*/
@@ -120,7 +120,7 @@ if (e.target.checked) {
       $('.prev').css("color", "black");
       $('.next').css("color", "black");
       $('#p_title').html("Character Links");
-      $('#p_title').css("color", "white");
+      $('#p_title').css("color", "grey");
       $('#p1').attr("src", xi)
       $('#project_list_1 .text').html("https://www.ffxiah.com/player/Quetzalcoatl/Zebix")
       $('#p2').attr("src", xiv)
@@ -129,7 +129,7 @@ if (e.target.checked) {
       $('#project_list_3 .text').html("https://worldofwarcraft.com/en-us/character/us/proudmoore/genjibow")
       /*Footer*/
       $('footer').css("background-color", "black");
-      $('footer').css("color", "white");
+      $('footer').css("color", "grey");
 }
 
 /* While page in dark mode and checkbox is
