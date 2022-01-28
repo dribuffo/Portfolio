@@ -6,10 +6,10 @@
 
 | Day | Deliverable | Status |
 |:---:|:-----------:|:------:|
-|  M  | Project Worksheet | Incomplete |
-|  T  | Core application structure and Grid Layout | Incomplete |
-|  W  | MVP & Bug fixes  |  Incomplete |
-|  R  | Work on PostMVPs | Incomplete |
+|  M  | Project Worksheet | complete |
+|  T  | Core application structure and Grid Layout | complete |
+|  W  | MVP & Bug fixes  |  complete |
+|  R  | Work on PostMVPs | complete |
 |  F  | Presentation Day | Incomplete |
 
 
@@ -61,39 +61,109 @@ It will be coded using HTML, CSS, Javascript and will include at least 1 of: ani
 ##### MVP
 | Component | Priority | Estimated Time | Actual Time |
 |:---------:|:--------:|:--------------:|:-----------:|
-| HTML shell |   H     |     2 hours    |      ?      |
-| Hamburger Menu |  H  |     2 hours    |      ?      |
-|   Photo   |    L     |     1 hour     |      ?      |
-| Regular Nav |   H    |     1 hour     |      ?      |
-| Filling in info |  M |     .5 hour    |      ?      |
-| Grid formatting |  H |     3 hours    |      ?      |
-| CSS styling |     M  |    2.5 hours   |      ?      |
-| Reactivity  |    H   |    2 hours     |      ?      |
-|  Footer    |    L    |    2 hours     |      ?      |
-|   Total   |          |     16 hours   |      ?      |
+| HTML shell |   H     |     2 hours    |      4hrs   |
+| Hamburger Menu |  H  |     2 hours    |      0hrs   |
+|   Photo   |    L     |     1 hour     |      3hrs   |
+| Regular Nav |   H    |     1 hour     |      2hrs   |
+| Filling in info |  M |     .5 hour    |      1hr    |
+| Grid formatting |  H |     3 hours    |      5hrs   |
+| CSS styling |     M  |    2.5 hours   |      4hrs   |
+| Reactivity  |    H   |    2 hours     |      5hrs   |
+|  Footer    |    L    |    2 hours     |      2hrs   |
+|   Total   |          |     16 hours   |      26hrs  |
 
 
 ##### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 |:---------:|:--------:|:--------------:|:-----------:|
-| Fun mode button | L  |     3 hours    |      ?     |
-| fun mode styling | L |     1 hours    |      ?     |
-| fun mode info   |  L |     2 hours    |      ?     |
-|  Total    |    L     |     6 hours    |      ?     |
+| Fun mode button | L  |     3 hours    |      2hrs  |
+| fun mode styling | L |     1 hours    |      3hrs  |
+| fun mode info   |  L |     2 hours    |      1hr   |
+|  Total    |    L     |     6 hours    |      6hr   |
 
 ## Additional Libraries
 ---
 ```
+None
 ```
 
 ## Code Snippet
 ---
 ```
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
 ```
+I struggled with trying to make my own slideshow in javascript for a little while before just looking up a solution online. 
+I thought this was a really simple way to achieve my desired results. The HTML:
+```
+<div class="slideshow-container" id="project_list">
+                <div class="mySlides fade" id="project_list_1">
+                    <img id="p1" src="https://cdn-icons-png.flaticon.com/512/136/136528.png" style="width: 100%" class="project_image">
+                    <div class="text"> This is an example of my HTML centric project.</div>
+                </div>
+                <div class="mySlides fade" id="project_list_2">
+                    <img id="p2" src="https://cdn-icons-png.flaticon.com/512/180/180841.png" style="width: 100%" class="project_image">
+                    <div class="text"> This is an example of complicated CSS project.</div>
+                </div>
+                <div class="mySlides fade" id="project_list_3">
+                    <img id="p3" src="https://cdn-icons-png.flaticon.com/512/136/136530.png" style="width: 100%" class="project_image">
+                    <div class="text"> This is an example of a solution using some complicated Javascript.</div>
+                </div>
+                <!-- next and previous buttons-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+                <!-- navigation buttons-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+```
+Was actually a little more complicated than I first initially thought it was going to be, so I was glad that someone else had a workable solution.
+
+
+
 
 ## Issues and Resolutions
 ---
+I was having lots of issues swapping pictures over from one to another when I switched themes. It turns out the easiest way to do this was via tagging each photo that needed to change with it's own ID, and then swapping it out with jQuery.
+
+For example, this:
 ```
+<img src="https://cdn-icons-png.flaticon.com/512/136/136528.png" style="width: 100%" class="project_image">
+```
+Became this:
+```
+<img id="p1" src="https://cdn-icons-png.flaticon.com/512/136/136528.png" style="width: 100%" class="project_image">
+
+$('#p1').attr("src", "https://www.pngfind.com/pngs/m/83-837789_final-fantasy-portal-site-final-fantasy-xi-logo.png")
 ```
 
 ## Contributions and Attributions
