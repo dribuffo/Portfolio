@@ -211,6 +211,23 @@ h2 {
     text-align: center;
 }
 
+.next1 {
+    grid-column: 2;
+    grid-row: 3;
+    place-self: center;
+    text-align: center;
+    visibility: hidden;
+}
+
+.next2 {
+   grid-column: 3;
+   grid-row: 3;
+   place-self: center;
+   text-align: center;
+   visibility: hidden;
+}
+
+
 .skill_list_text {
     color: black;
     font-family: 'Orbitron', sans-serif;

@@ -13,17 +13,17 @@
     <title>Daniel Ribuffo's Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="theme-switch-container">
+    <header id="hdr">
+        <div class="theme-switch-container" id="tsc">
             <label class="theme-slider" for="checkbox">
                 <input type="checkbox" id="checkbox">
                 <div class="round slider"></div>
             </label>
-            <div class="slider_bar_text">
+            <div class="slider_bar_text" id="sbt">
                 <p>Toggle to gamer mode</p>
             </div>
         </div>
-        <div class="header_text">
+        <div class="header_text" id="ht">
             <p>Hi I'm Daniel, welcome to my webpage!</p>
         </div>
         <div class="navbar">
@@ -56,20 +56,28 @@
             <button class="arrow" onclick="skillsArrow()"><img src="doublearrow.png" width="50" height="50"></button>
             <div class="skill_list">
                 <item class="html">
-                    <img src="https://cdn-icons-png.flaticon.com/512/136/136528.png" alt="html icon" width="70" height="70">
+                    <img id="one" src="https://cdn-icons-png.flaticon.com/512/136/136528.png" alt="html icon" width="70" height="70">
                     <p class="skill_list_text"> HTML</p>
                 </item>
                 <item class="css">
-                    <img src="https://cdn-icons-png.flaticon.com/512/180/180841.png" alt="html icon" width="70" height="70">
+                    <img id="two" src="https://cdn-icons-png.flaticon.com/512/180/180841.png" alt="html icon" width="70" height="70">
                     <p class="skill_list_text">CSS</p>
                 </item>
                 <item class="javascript">
-                    <img src="https://cdn-icons-png.flaticon.com/512/136/136530.png" alt="html icon" width="70" height="70">
+                    <img id="three" src="https://cdn-icons-png.flaticon.com/512/136/136530.png" alt="html icon" width="70" height="70">
                     <p class="skill_list_text"> Javascript</p>
                 </item>
                 <item class="python">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="html icon" width="100" height="100">
+                    <img id="four" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="html icon" width="100" height="100">
                     <p class="skill_list_text"> Python</p>
+                </item>
+                <item class="next1">
+                    <img id="five" src=" " alt="html icon" width="100" height="100">
+                    <p class="skill_list_text"> </p>
+                </item>
+                <item class="next2">
+                    <img id="six" src=" " alt="html icon" width="100" height="100">
+                    <p class="skill_list_text"> </p>
                 </item>
             </div>
         </section>
@@ -79,15 +87,15 @@
             <button class="arrow" onclick="projectsArrow()"><img src="doublearrow.png" width="50" height="50"></button>
             <div class="slideshow-container" id="project_list">
                 <div class="mySlides fade" id="project_list_1">
-                    <img src="https://cdn-icons-png.flaticon.com/512/136/136528.png" style="width: 100%" class="project_image">
+                    <img id="p1" src="https://cdn-icons-png.flaticon.com/512/136/136528.png" style="width: 100%" class="project_image">
                     <div class="text"> This is an example of my HTML centric project.</div>
                 </div>
                 <div class="mySlides fade" id="project_list_2">
-                    <img src="https://cdn-icons-png.flaticon.com/512/180/180841.png" style="width: 100%" class="project_image">
+                    <img id="p2" src="https://cdn-icons-png.flaticon.com/512/180/180841.png" style="width: 100%" class="project_image">
                     <div class="text"> This is an example of complicated CSS project.</div>
                 </div>
                 <div class="mySlides fade" id="project_list_3">
-                    <img src="https://cdn-icons-png.flaticon.com/512/136/136530.png" style="width: 100%" class="project_image">
+                    <img id="p3" src="https://cdn-icons-png.flaticon.com/512/136/136530.png" style="width: 100%" class="project_image">
                     <div class="text"> This is an example of a solution using some complicated Javascript.</div>
                 </div>
                 <!-- next and previous buttons-->
