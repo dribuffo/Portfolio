@@ -1,4 +1,26 @@
-# PROJECT OVERVIEW
+# PROJECT OVERVIEW Version 2 (current)
+---
+
+## Project Description
+---
+This is the second version of my portfolio website. I decided to start over from scratch with version 2. The first thing that I did was use bootstrap to make some of the functionality easier to deal with. Bootstrap was used to make the different sections fly in from the various directions. I then used grid to fill and line everything up in the specific containers. This site was made with a mobile first design philosophy.
+
+## Additional Libraries
+---
+Bootstrap
+
+## Background Images
+---
+"Anchorage  Northern Lights" image: photo by Chrisotpher Barry, used with permission.
+"Leaving Haines" image: photo by Chrisotpher Barry, used with permission.
+
+
+## Future features
+---
+I plan on reimplementing the "gamer mode" toggle that I had on version 1. This time the background will change to a picture of Anchorage and the northern lights and the over all color scheme will be based of that to give it a "night mode" type feeling. Then I will make edits to all the onscreen text, images, and links. 
+
+
+# PROJECT OVERVIEW Version 1
 ---
 
 ## Project Schedule
@@ -83,9 +105,7 @@ It will be coded using HTML, CSS, Javascript and will include at least 1 of: ani
 
 ## Additional Libraries
 ---
-```
-None
-```
+Bootstrap
 
 ## Code Snippet
 ---
@@ -169,7 +189,7 @@ $('#p1').attr("src", "https://www.pngfind.com/pngs/m/83-837789_final-fantasy-por
 ## Contributions and Attributions
 ---
 
-###### Images and Icons
+###### Icons
 HTML icon: https://cdn-icons-png.flaticon.com/512/136/136528.png
 
 CSS icon: https://cdn-icons-png.flaticon.com/512/180/180841.png
@@ -186,11 +206,10 @@ hamburger menu: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hambur
 
 down arrow: https://www.clipartmax.com/png/middle/53-531844_elegant-picture-of-a-arrow-pointing-down-arrow-pointing-arrow-pointing-down.png
 
-Anchorage image: photo by Erik Judson, used with permission.
 
-anchorage at dusk image: attribution: "Photo by Didier Moïse"
-
-anchorage at night: free4kwallpapers.com
+###### Background Images
+"Anchorage  Northern Lights" image: photo by Chrisotpher Barry, used with permission.
+"Leaving Haines" image: photo by Chrisotpher Barry, used with permission.
 
 ###### Code Chunks
 ```

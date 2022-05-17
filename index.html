@@ -1,137 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <!--<opening html tag> -->
+<head> <!--<opening head tag> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Linking the css sheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 <!-- Linking fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <title>Daniel Ribuffo's Portfolio</title>
-</head>
-<body>
-    <header id="hdr">
-        <div class="theme-switch-container" id="tsc">
-            <label class="theme-slider" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <div class="round slider"></div>
-            </label>
-            <div class="slider_bar_text" id="sbt">
-                <p>Toggle to gamer mode</p>
-            </div>
-        </div>
-        <div class="header_text" id="ht">
-            <p>Hi I'm Daniel, welcome to my webpage!</p>
-        </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="#about_move">About Me</a></li>
-                <li><a href="#skills_move">Skills</a></li>
-                <li><a href="#project_move">Projects</a></li>
-                <li><a href="#bottom_move">Links</a></li>
-            </ul>
-        </div>
-    </header>
-    <!--Container to hold all the separate info blocks-->
-    <div class="container">
-        <!-- about me section-->
-        <section class="about_me" id="about_move">
-            <h2>About Me</h2>
-            <button class="arrow" onclick="aboutMeArrow()"><img src="doublearrow.png" width="50" height="50"></button>
-            <div class="about_me_container">
-                <div class="photo">
-                    <img src="https://lh3.googleusercontent.com/-WUj2AxFtFzfZSjzc7aYMVpC_Kvp50jApN0oJSJGycBVYEJdt4HzK6pb8v8H0N_xtqfaKld3BhB0Rdojg1j1bwrW7xZPuYKwz3C5S-dHTJzkeghbOzvy1Kj6o27zpW_P1sYj-fTj=w2400" alt="head shot" width="200" height="300"> <!-- standard size is 200 x 300-->
-                </div>
-                <div class="about_me_text">
-                    <p>Software Developer and fledgling game designer with a <em>app</em>etite to learn and standing in front of the buffet of the world. Skilled in logstics management, hardware assembly, and with a proven skill of handling himself under pressure.</p>
-                </div>
-            </div>
-        </section>
-        <!-- skills section-->
-        <section class="skills" id="skills_move">
-            <h2>Skills</h2>
-            <button class="arrow" onclick="skillsArrow()"><img src="doublearrow.png" width="50" height="50"></button>
-            <div class="skill_list">
-                <item class="html">
-                    <img id="one" src="https://cdn-icons-png.flaticon.com/512/136/136528.png" alt="html icon" width="70" height="70">
-                    <p class="skill_list_text"> HTML</p>
-                </item>
-                <item class="css">
-                    <img id="two" src="https://cdn-icons-png.flaticon.com/512/180/180841.png" alt="html icon" width="70" height="70">
-                    <p class="skill_list_text">CSS</p>
-                </item>
-                <item class="javascript">
-                    <img id="three" src="https://cdn-icons-png.flaticon.com/512/136/136530.png" alt="html icon" width="70" height="70">
-                    <p class="skill_list_text"> Javascript</p>
-                </item>
-                <item class="python">
-                    <img id="four" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="html icon" width="100" height="100">
-                    <p class="skill_list_text"> Python</p>
-                </item>
-                <item class="next1">
-                    <img id="five" src=" " alt="html icon" width="100" height="100">
-                    <p class="skill_list_text"> </p>
-                </item>
-                <item class="next2">
-                    <img id="six" src=" " alt="html icon" width="100" height="100">
-                    <p class="skill_list_text"> </p>
-                </item>
-            </div>
-        </section>
-        <!--  projects section-->
-        <section class="projects" id="project_move">
-            <h2 id="p_title">Projects</h2>
-            <button class="arrow" onclick="projectsArrow()"><img src="doublearrow.png" width="50" height="50"></button>
-            <div class="slideshow-container" id="project_list">
-                <div class="mySlides fade" id="project_list_1">
-                    <img id="p1" src="https://cdn-icons-png.flaticon.com/512/136/136528.png" style="width: 100%" class="project_image">
-                    <div class="text"> This is an example of my HTML centric project.</div>
-                </div>
-                <div class="mySlides fade" id="project_list_2">
-                    <img id="p2" src="https://cdn-icons-png.flaticon.com/512/180/180841.png" style="width: 100%" class="project_image">
-                    <div class="text"> This is an example of complicated CSS project.</div>
-                </div>
-                <div class="mySlides fade" id="project_list_3">
-                    <img id="p3" src="https://cdn-icons-png.flaticon.com/512/136/136530.png" style="width: 100%" class="project_image">
-                    <div class="text"> This is an example of a solution using some complicated Javascript.</div>
-                </div>
-                <!-- next and previous buttons-->
-                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-                <a class="next" onclick="plusSlides(1)">&#10095</a>
-                <!-- navigation buttons-->
-                <div style="text-align: center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            </div>
-        </section>
-    </div> <!-- container div closing tag-->
-    <footer>
-        <!--sign off-->
+</head> <!--<closing head tag> -->
+<body> <!--<opening body tag> -->
+  <!--Container to hold all the separate info blocks-->
+<div class="container"></div>
+  <section class="about_me"> <!--About me section-->
+      <h2>About Me</h2>
+      <div class="about_me_container">
+          <div class="photo">
+              <img src="https://lh3.googleusercontent.com/-WUj2AxFtFzfZSjzc7aYMVpC_Kvp50jApN0oJSJGycBVYEJdt4HzK6pb8v8H0N_xtqfaKld3BhB0Rdojg1j1bwrW7xZPuYKwz3C5S-dHTJzkeghbOzvy1Kj6o27zpW_P1sYj-fTj=w2400" alt="head shot" width="200" height="300">
+          </div>
+          <div class="about_me_text">
+              <p>Software Developer and fledgling game programmer with a <em>app</em>etite to learn and standing in front of the buffet of the world. Skilled in logstics management, hardware assembly, and with a proven skill of handling himself under pressure.</p>
+          </div>
+      </div>
+      <div class="buttons">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">My proficiencies</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">My projects</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Contact me</button>
+      </div>
+  </section> <!-- about me section closing tag -->
+  <section class="skills"> <!--Skills, opens from the Right-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Skill proficiencies:</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="right">
+        <item class="html">
+          <img id="one" src="https://cdn-icons-png.flaticon.com/512/136/136528.png" alt="html icon" class="rightSideBarImage">
+          <p class="skill_list_text"> HTML</p>
+      </item>
+      <item class="css">
+          <img id="two" src="https://cdn-icons-png.flaticon.com/512/180/180841.png" alt="html icon" class="rightSideBarImage">
+          <p class="skill_list_text">CSS</p>
+      </item>
+      <item class="javascript">
+          <img id="three" src="https://cdn-icons-png.flaticon.com/512/136/136530.png" alt="html icon" class="rightSideBarImage">
+          <p class="skill_list_text"> Javascript</p>
+      </item>
+      <item class="python">
+          <img id="four" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="html icon" class="rightSideBarImage">
+          <p class="skill_list_text"> Python</p>
+      </item>
+      <item class="bootstrap">
+        <img id="five"  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fv5.getbootstrap.com%2Fdocs%2F5.0%2Fassets%2Fbrand%2Fbootstrap-logo-shadow.png&f=1&nofb=1" alt="html icon" class="rightSideBarImage">
+        <p class="skill_list_text"> Bootstrap</p>
+      </item>
+      <item class="react">
+        <img id="six" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1" alt="React logo" class="rightSideBarImage">
+        <p class="skill_list_text"> REACT</p>
+      </item>
+      <item class="mongodb">
+        <!-- MongoDB image from: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmpng.subpng.com%2F20190401%2Fzsf%2Fkisspng-mongodb-document-oriented-database-nosql-openshift-web-app-development-servcie-in-dehradun-5ca1b8cb8a0f32.3708278115541024755655.jpg&f=1&nofb=1 -->
+        <img id="seven" src="./images/mongodb.png" alt="Mongodb icon" class="rightSideBarImage">
+        <p class="skill_list_text"> MongoDB</p>
+      </item>
+      <item class="Express">
+        <!-- Express image from: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.pngocean.com%2Ffiles%2F925%2F447%2F818%2Fexpress-js-node-js-javascript-mongodb-node-js.jpg&f=1&nofb=1 -->
+        <img id="eight" src="./images/express.png" alt="Express logo" class="rightSideBarImage">
+        <p class="skill_list_text"> Express</p>
+      </item>
+      <item class="Node.js">
+        <!--NodeJS image from: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi7.pngguru.com%2Fpreview%2F330%2F211%2F681%2Fnode-js-javascript-express-js-server-side-scripting-front-and-back-ends-node-js.jpg&f=1&nofb=1" -->
+        <img id="nine" src="./images/nodejs.png" alt="Node JS" class="rightSideBarImage">
+        <p class="skill_list_text"> Node.js</p>
+      </item>
+      </div>
+    </div>
+  </section> <!-- skills section closing tag-->
+  <section class="links"> <!--Contact Me, opens from the Left-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasTopLabel">Contact me links!</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="left">
         <div class="foottext" id="bottom_move">
-            <p class="p_foot">
-                <p>Created by Daniel Ribuffo</p>
-            </p>
+            <!--signature-->
+            <p class="sign_off">Created by Daniel Ribuffo</p>
         </div>
         <div class="email">
-            <!--email symbol-->
-            <a href="mailto:dribuffo@gmail.com">
-                <img src="email.png" alt="email" width="50" height="50">
-            </a>
+          <!--email symbol-->
+          <a href="mailto:dribuffo+portfolio@gmail.com">
+              <img src="./images/email.png" alt="email" width="auto" height="100">
+          </a>
         </div>
-        <div class="linkedin">
+          <div class="linkedin">
             <!--linkedin symbol-->
             <a href="https://www.linkedin.com/in/danielribuffo/">
-                <img src="https://blog-assets.hootsuite.com/wp-content/uploads/2018/09/In-2C-54px-R.png" alt="linked in" width="auto" height="auto">
+                <img src="https://blog-assets.hootsuite.com/wp-content/uploads/2018/09/In-2C-54px-R.png" alt="linked in" width="auto" height="100">
             </a>
         </div>
-    </footer>
-<!-- Linking Javascript and jQuery-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="apps.js"></script>
-</body>
-</html>
+        <div class="github">
+          <!--github symbol-->
+          <a href="https://github.com/dribuffo">
+            <!-- github image from: https://img.favpng.com/4/20/21/github-computer-icons-icon-design-png-favpng-KaDTwuHWgG8D1qn47QW2hK7Gj.jpg-->
+            <img src="./images/github.png" alt="linked in" width="auto" height="100">
+          </a>
+      </div>
+          <!--gamer mode easter egg-->
+          <span class="switchButton">
+            <div class="theme-switch-container" id="tsc">
+                <label class="theme-slider" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <div class="round slider"></div>
+                </label>
+                <div class="slider_bar_text" id="sbt">
+                    <p>Toggle to gamer mode  (feature coming soon)</p>
+                </div>
+            </div>
+          </span>
+      </div> <!--closing offcanvas body tag-->
+    </div> <!--closing canvas tag-->
+  </section> <!-- links section closing tag-->
+  <section class="skills"> <!--Projects, opens from the bottom-->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Projects:</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="projectsContainer">
+        <div class="individualProjectDiv">
+          <img class="projectBarImages" src="https://cdn-icons-png.flaticon.com/512/136/136528.png" alt="html icon" >
+          <img class="projectBarImages" src="https://cdn-icons-png.flaticon.com/512/180/180841.png" alt="html icon" >
+          <img class="projectBarImages" src="https://cdn-icons-png.flaticon.com/512/136/136530.png" alt="html icon" >
+          <img class="projectBarImages" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fv5.getbootstrap.com%2Fdocs%2F5.0%2Fassets%2Fbrand%2Fbootstrap-logo-shadow.png&f=1&nofb=1" alt="html icon">
+          <h5>This Portfolio</h5>
+          <p class="projectBarText">This project was made with HTML, CSS, JQuery, as well as using Bootstrap.</p>
+        </div>
+        <div class="individualProjectDiv">
+          <a href="https://github.com/dribuffo/Pokedex-App" ><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1" class="projectBarImages" alt="React logo"></a>
+          <h5>Pokemon Search App</h5>
+          <p class="projectBarText">This program looks for a Pokemon (up to Legend of Arceus) and lets you add them to your team. Built using REACT.</p>
+        </div>
+        <div class="individualProjectDiv">
+          <a href="https://dribuffo.github.io/Role-Assignment/"> <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1" class="projectBarImages" alt="React logo"> </a>
+          <h5>Active Party Checker</h5>
+          <p class="projectBarText">Another REACT app that signals the FFXIV API to return information on all my guildmates' leveled jobs and lets us configure a party based on what jobs they have leveled.</p>
+        </div>
+        <div class="individualProjectDiv">
+          <a href="https://daffodil-dragons.github.io/Project-03-Client/"> <img src="./images/mongodb.png" class="projectBarImages" alt="Mongodb icon"> </a>
+          <a href="https://daffodil-dragons.github.io/Project-03-Client/"> <img src="./images/express.png" class="projectBarImages" alt="Express logo" > </a>
+          <a href="https://daffodil-dragons.github.io/Project-03-Client/"> <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1" class="projectBarImages" alt="React logo"> </a>
+          <a href="https://daffodil-dragons.github.io/Project-03-Client/"> <img src="./images/nodejs.png" class="projectBarImages" alt="Node JS"> </a>
+          <h5>TTRPG Character Sheet Creator</h5>
+          <p class="projectBarText">A MERN app that allows you to create, store, and update a D&D character sheet.</p>
+        </div>
+        <div class="individualProjectDiv">
+          <a href="https://dribuffo.github.io/Capstone_Project_Client/"> <img src="./images/mongodb.png" class="projectBarImages" alt="Mongodb icon"> </a>
+          <a href="https://dribuffo.github.io/Capstone_Project_Client/"> <img src="./images/express.png" class="projectBarImages" alt="Express logo" > </a>
+          <a href="https://dribuffo.github.io/Capstone_Project_Client/"> <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1" class="projectBarImages" alt="React logo"> </a>
+          <a href="https://dribuffo.github.io/Capstone_Project_Client/"> <img src="./images/nodejs.png" class="projectBarImages" alt="Node JS"> </a>
+          <h5>Lex Talionis Database</h5>
+          <p class="projectBarText">A MERN app that allows you to check and update my FFXIV guilds collections of mounts and minions and blue magic spells.</p>
+        </div>
+        <div class="individualProjectDiv">
+          <a href="https://robota-ukraine.netlify.app/"> <img src="./images/mongodb.png" class="projectBarImages" alt="Mongodb icon"> </a>
+          <a href="https://robota-ukraine.netlify.app/"> <img src="./images/express.png" class="projectBarImages" alt="Express logo" > </a>
+          <a href="https://robota-ukraine.netlify.app/"> <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1" class="projectBarImages" alt="React logo"> </a>
+          <a href="https://robota-ukraine.netlify.app/"> <img src="./images/nodejs.png" class="projectBarImages" alt="Node JS"> </a>
+          <h5>Robota</h5>
+          <p class="projectBarText">My project for General Assembly's 2022 International Aid Hackathon. 1st place winner of the Innovation track, and winner of the crowd favorite.</p>
+        </div>
+      </div>
+    </div> <!-- container div closing tag-->
+  </section> <!-- projects section closing tag-->
+  <!-- Linking Javascript and jQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="apps.js"></script>
+</body> <!--<closing body tag> -->
+</html> <!--<closing html tag> -->
