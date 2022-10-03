@@ -1,7 +1,7 @@
 body{
     background-color: #44729B;
     display: grid;
-    grid-template-rows: 55px 1fr .5fr .5fr .5fr 160px;
+    grid-template-rows: 55px 1fr .5fr .5fr .5fr;
 }
 
 .header{
@@ -160,6 +160,7 @@ body{
     display: grid;
     grid-template-rows: 10% 90%;
     grid-template-columns: 45% 10% 45%;
+    margin-bottom: 50px;
 }
 
 .contact_me_header{
@@ -209,9 +210,6 @@ body{
             Footer Section
 */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     height: 50px;
     background-color: #1C4774;
 }
