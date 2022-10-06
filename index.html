@@ -14,6 +14,28 @@
     <title>Daniel Ribuffo's Portfolio</title>
 </head> <!--<closing head tag> -->
 <body> <!--<opening body tag>-->
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   <header class="header"> <!--<nav bar>-->
     <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #e3f2fd;">
       <div class="container-fluid">
@@ -33,10 +55,10 @@
   </header>
   <section class="photos"> <!--<photo section>-->
     <div class="head_shot">
-      <img src="https://lh3.googleusercontent.com/-WUj2AxFtFzfZSjzc7aYMVpC_Kvp50jApN0oJSJGycBVYEJdt4HzK6pb8v8H0N_xtqfaKld3BhB0Rdojg1j1bwrW7xZPuYKwz3C5S-dHTJzkeghbOzvy1Kj6o27zpW_P1sYj-fTj=w2400" alt="head shot" width="200" height="300">
+      <img src="https://lh3.googleusercontent.com/-WUj2AxFtFzfZSjzc7aYMVpC_Kvp50jApN0oJSJGycBVYEJdt4HzK6pb8v8H0N_xtqfaKld3BhB0Rdojg1j1bwrW7xZPuYKwz3C5S-dHTJzkeghbOzvy1Kj6o27zpW_P1sYj-fTj=w2400" id= "head_shot" alt="head shot" width="200" height="300">
     </div>
-      <p class="photos_text">Daniel Ribuffo</p>
-      <p class="photos_text">Software Developer</p>
+      <h1 class="photos_text">Daniel Ribuffo</h1>
+      <h3 class="photos_text">Software Engineer || Detail-Oriented Problem Solver || Lifelong Gamer</h3>
   </section>
   <section class="about_me" id="about_me"> <!--<about me>-->
     <div class="about_me_links">
@@ -44,7 +66,6 @@
         <a href="mailto:dribuffo+portfolio@gmail.com?subject=Mail from your portfolio"><img src="./images/email.png" class="social_icon" alt="email icon"></a>
         <a href="https://github.com/dribuffo"><img src="./images/github.png" class="social_icon" alt="github icon"></a>
         <a href="https://www.linkedin.com/in/danielribuffo/"><img src="./images/linkedin-logo.png" class="social_icon" alt="linkedin icon"></a>
-        
       </div>
       <div class="skill_links">
         <img src="./images/html.png" class="skill_icon" alt="html icon">      
@@ -52,10 +73,12 @@
         <img src="./images/javascript.png" class="skill_icon" alt="javascript icon">
         <img src="./images/python.png" class="skill_icon" alt="python icon">
         <img src="./images/bootstrap.png" class="skill_icon" alt="bootstrap icon">
+        <img src="./images/react.png" class="skill_icon" alt="react icon">
         <img src="./images/figma.png" class="skill_icon" alt="Figma logo">
         <img src="./images/visual-studio.png" class="skill_icon" alt="VSCode logo">
-        <!--Figma-->
-        <!--vscode-->
+        <img src="./images/mongodb.png" class="skill_icon" alt="Mongodb icon"> </a>
+        <img src="./images/express.png" class="skill_icon" alt="Express logo" > </a>
+        <img src="./images/nodejs.png" class="skill_icon" alt="Node JS"> </a>
       </div>
     </div>
     <div class="about_me_text">
@@ -67,34 +90,63 @@
   </section>
   <section class="projects" id="projects"> <!--<projects>-->
     <div class="project" id="project1">
-      <div class="tech_stack"></div>
-      <div class="project_name"><p>Name</p></div>
-      <div class="project_description"><p>Project Description</p></div>
+      <div class="tech_stack">
+        <img src="./images/html.png" class="tech_stack_icon" alt="html icon">      
+        <img src="./images/css.png" class="tech_stack_icon" alt="css icon">
+        <img src="./images/javascript.png" class="tech_stack_icon" alt="javascript icon">
+        <img src="./images/python.png" class="tech_stack_icon" alt="python icon">
+        <img src="./images/bootstrap.png" class="tech_stack_icon" alt="bootstrap icon">
+        <a><a href="https://www.figma.com/file/LmJ4NZ6iEXi24pxr28lGm5/Portfolio?node-id=3%3A39"><img src="./images/figma.png" class="tech_stack_icon" alt="Figma logo"></a>
+      </div>
+      <div class="project_name"><a href="https://github.com/dribuffo/Portfolio"><h4>This Portfolio</h4></a></div>
+      <div class="project_description"><p>This project was made with HTML, CSS, JS, as well as using Bootstrap. Initially desgined using Figma, click the icon to see the figma file.</p></div>
     </div>
     <div class="project" id="project2">
-      <div class="tech_stack"></div>
-      <div class="project_name"><p>Name</p></div>
-      <div class="project_description"><p>Project Description</p></div>
+      <div class="tech_stack">
+        <img src="./images/react.png" class="tech_stack_icon" alt="react icon">
+      </div>
+      <div class="project_name"><a href="https://github.com/dribuffo/Pokedex-App" ><h4>Pokemon Search App</h4></a></div>
+      <div class="project_description">
+        <p>This program looks for a Pokemon (up to Legend of Arceus) and lets you add them to your team. Built using REACT.</p>
+        <p>Cheat Code: pokemon</p>
+      </div>
     </div>
     <div class="project" id="project3">
-      <div class="tech_stack"></div>
-      <div class="project_name"><p>Name</p></div>
-      <div class="project_description"><p>Project Description</p></div>
+      <div class="tech_stack">
+        <img src="./images/react.png" class="tech_stack_icon" alt="react icon">
+      </div>
+      <div class="project_name"> <a href="https://dribuffo.github.io/Role-Assignment/"><h4>Active Party Checker</h4></a></div>
+      <div class="project_description"><p>Another REACT app that signals the FFXIV API to return information on all my guildmates' leveled jobs and lets us configure a party based on what jobs they have leveled.</p></div>
     </div>
     <div class="project" id="project4">
-      <div class="tech_stack"></div>
-      <div class="project_name"><p>Name</p></div>
-      <div class="project_description"><p>Project Description</p></div>
+      <div class="tech_stack">
+        <img src="./images/mongodb.png" class="tech_stack_icon" alt="Mongodb icon"> </a>
+        <img src="./images/express.png" class="tech_stack_icon" alt="Express logo" > </a>
+        <img src="./images/react.png" class="tech_stack_icon" alt="react icon">
+        <img src="./images/nodejs.png" class="tech_stack_icon" alt="Node JS"> </a>
+      </div>
+      <div class="project_name"><a href="https://daffodil-dragons.github.io/Project-03-Client/"><h4>TTRPG Character Sheet Creator</h4></a></div>
+      <div class="project_description"><p>A MERN app that allows you to create, store, and update a D&D character sheet.</p></div>
     </div>
     <div class="project" id="project5">
-      <div class="tech_stack"></div>
-      <div class="project_name"><p>Name</p></div>
-      <div class="project_description"><p>Project Description</p></div>
+      <div class="tech_stack">
+        <img src="./images/mongodb.png" class="tech_stack_icon" alt="Mongodb icon"> </a>
+        <img src="./images/express.png" class="tech_stack_icon" alt="Express logo" > </a>
+        <img src="./images/react.png" class="tech_stack_icon" alt="react icon">
+        <img src="./images/nodejs.png" class="tech_stack_icon" alt="Node JS"> </a>
+      </div>
+      <div class="project_name"><a href="https://dribuffo.github.io/Capstone_Project_Client/"><h4>Lex Talionis Database</h4></a></div>
+      <div class="project_description"><p>A MERN app that allows you to check and update my FFXIV guilds collections of mounts and minions and blue magic spells.</p></div>
     </div>
     <div class="project" id="project6">
-      <div class="tech_stack"></div>
-      <div class="project_name"><p>Name</p></div>
-      <div class="project_description"><p>Project Description</p></div>
+      <div class="tech_stack">
+        <img src="./images/mongodb.png" class="tech_stack_icon" alt="Mongodb icon"> </a>
+        <img src="./images/express.png" class="tech_stack_icon" alt="Express logo" > </a>
+        <img src="./images/react.png" class="tech_stack_icon" alt="react icon">
+        <img src="./images/nodejs.png" class="tech_stack_icon" alt="Node JS"> </a>
+      </div>
+      <div class="project_name"><a href="https://robota-ukraine.netlify.app/"><h4>Robota</h4></a></div>
+      <div class="project_description"><p>My project for General Assembly's 2022 International Aid Hackathon. 1st place winner of the Innovation track, and winner of the crowd favorite.</p></div>
     </div>
   </section>
   <section class="contact_me" id="contact_me"><!--<contact me>-->
@@ -110,9 +162,11 @@
     </div>
     <div class="right_side">
       <div class="message_box">
-        <div class="name_input"><p>Name input</p></div>
-        <div class="email_input"><p>email-input</p></div>
-        <div class="message_field"><p>message</p></div>
+        <form action="#" id="code_input">
+          <label for="input_code"><h3>Input Cheat Code:</h3></label>
+          <input type="text" id="input_code" name="inputfield" placeholder="Input code from above...">
+          <input type="submit" name="click" value="Install Cheat Code" onclick="change();">
+        </form>
       </div>
     </div>
   </section>
@@ -130,16 +184,20 @@
               <h5 class="modal-title" id="exampleModalLongTitle">Image and Icon Credits</h5>
             </div>
             <div class="modal-body">
-              <p><a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
-              <p><a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a></p>
-              <p><a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Smashicons - Flaticon</a></p>
-              <p><a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Smashicons - Flaticon</a></p>
-              <p><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Google - Flaticon</a></p>
-              <p><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></p>
-              <p><a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a></p>
-              <p><a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Freepik - Flaticon</a></p>
-              <p><a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik - Flaticon</a></p>
-              <p><a href="https://www.flaticon.com/free-icons/microsoft" title="microsoft icons">Microsoft(VSCode) icons created by Freepik - Flaticon</a></p>
+              <ul>
+                <li><a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Smashicons - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Smashicons - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Google - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/microsoft" title="microsoft icons">Microsoft(VSCode) icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://wweb.dev/resources/animated-css-background-generator/" title="background generator">Background Generator by Louis Hoebregts</a></li>
+                <li><a href="https://www.w3schools.com/howto/howto_css_shake_image.asp" title="shaking icons">Shaking Icons from W3 Schools</a></li>
+              </ul>
             </div>
           </div>
         </div>
