@@ -62,11 +62,6 @@
   </section>
   <section class="about_me" id="about_me"> <!--<about me>-->
     <div class="about_me_links">
-      <div class="social_links">
-        <a href="mailto:dribuffo+portfolio@gmail.com?subject=Mail from your portfolio"><img src="./images/email.png" class="social_icon" alt="email icon"></a>
-        <a href="https://github.com/dribuffo"><img src="./images/github.png" class="social_icon" alt="github icon"></a>
-        <a href="https://www.linkedin.com/in/danielribuffo/"><img src="./images/linkedin-logo.png" class="social_icon" alt="linkedin icon"></a>
-      </div>
       <div class="skill_links">
         <img src="./images/html.png" class="skill_icon" alt="html icon">      
         <img src="./images/css.png" class="skill_icon" alt="css icon">
@@ -85,6 +80,11 @@
       <div class="text_box">
         <p>About Me:</p>
         <p>Software Developer and fledgling game programmer with an <em>app</em>etite to learn and standing in front of the buffet of the world. Skilled in logistics management and with a proven skill of handling himself under pressure.</p>
+        <div class="social_links">
+          <a href="mailto:dribuffo+portfolio@gmail.com?subject=Mail from your portfolio"><img src="./images/email.png" class="social_icon" alt="email icon"></a>
+          <a href="https://github.com/dribuffo"><img src="./images/github.png" class="social_icon" alt="github icon"></a>
+          <a href="https://www.linkedin.com/in/danielribuffo/"><img src="./images/linkedin-logo.png" class="social_icon" alt="linkedin icon"></a>
+        </div>
       </div>
     </div>
   </section>
@@ -116,17 +116,23 @@
         <img src="./images/react.png" class="tech_stack_icon" alt="react icon">
       </div>
       <div class="project_name"> <a href="https://dribuffo.github.io/Role-Assignment/"><h4>Active Party Checker</h4></a></div>
-      <div class="project_description"><p>Another REACT app that signals the FFXIV API to return information on all my guildmates' leveled jobs and lets us configure a party based on what jobs they have leveled.</p></div>
+      <div class="project_description">
+        <p>Another REACT app that signals the FFXIV API to return information on all my guildmates' leveled jobs and lets us configure a party based on what jobs they have leveled.</p>
+        <p>Cheat Code: XIV</p>
+      </div>
     </div>
     <div class="project" id="project4">
       <div class="tech_stack">
         <img src="./images/mongodb.png" class="tech_stack_icon" alt="Mongodb icon"> </a>
-        <img src="./images/express.png" class="tech_stack_icon" alt="Express logo" > </a>
+        <img src="./images/express.png" class="tech_stack_icon" alt="Express logo"> </a>
         <img src="./images/react.png" class="tech_stack_icon" alt="react icon">
         <img src="./images/nodejs.png" class="tech_stack_icon" alt="Node JS"> </a>
       </div>
       <div class="project_name"><a href="https://daffodil-dragons.github.io/Project-03-Client/"><h4>TTRPG Character Sheet Creator</h4></a></div>
-      <div class="project_description"><p>A MERN app that allows you to create, store, and update a D&D character sheet.</p></div>
+      <div class="project_description">
+        <p>A MERN app that allows you to create, store, and update a D&D character sheet.</p>
+        <p>Cheat Code: ttrpg</p>
+      </div>
     </div>
     <div class="project" id="project5">
       <div class="tech_stack">
@@ -136,7 +142,10 @@
         <img src="./images/nodejs.png" class="tech_stack_icon" alt="Node JS"> </a>
       </div>
       <div class="project_name"><a href="https://dribuffo.github.io/Capstone_Project_Client/"><h4>Lex Talionis Database</h4></a></div>
-      <div class="project_description"><p>A MERN app that allows you to check and update my FFXIV guilds collections of mounts and minions and blue magic spells.</p></div>
+      <div class="project_description">
+        <p>A MERN app that allows you to check and update my FFXIV guilds collections of mounts and minions and blue magic spells.</p>
+        <p>Cheat Code: lex</p>
+      </div>
     </div>
     <div class="project" id="project6">
       <div class="tech_stack">
@@ -197,11 +206,26 @@
                 <li><a href="https://www.flaticon.com/free-icons/microsoft" title="microsoft icons">Microsoft(VSCode) icons created by Freepik - Flaticon</a></li>
                 <li><a href="https://wweb.dev/resources/animated-css-background-generator/" title="background generator">Background Generator by Louis Hoebregts</a></li>
                 <li><a href="https://www.w3schools.com/howto/howto_css_shake_image.asp" title="shaking icons">Shaking Icons from W3 Schools</a></li>
+                <li><a href="https://img.pokemondb.net/artwork/avif/flareon.avif" title="flareon pokemon">Flareon Image</a></li>
+                <li><a href="https://icon-library.com/icon/d20-icon-15.html" title="d20 background">D20 Icon # 87871</a></li>
               </ul>
             </div>
           </div>
         </div>
     </div>
+      <a data-bs-toggle="modal" data-bs-target="#CheatCodeModal" id="cheatcode"></a>
+      <div class="modal fade" id="CheatCodeModal" tabindex="-1" role="dialog" aria-labelledby="CheatCodeModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="CheatCodeModalTitle"><a href="https://secure.square-enix.com/account/app/svc/ffxivregister?lng=en-gb">Sign up, and enjoy Eorzea today!</a></h5>
+            </div>
+            <div class="modal-body">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>    
   </footer>
   <!-- Linking Javascript and jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
