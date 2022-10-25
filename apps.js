@@ -30,10 +30,15 @@ function change() {
         case "lex":
         case "Lex":
         case "LEX":
-            //removing the purple orbs
+            //unmounts previous background:
+            $(".background span").css({"width": "22vmin"});
+            $(".background span").css({"height": "22vmin"});
+            $(".background").css({"background": "#44729b"});
+            $(".background").css({"background-image": ""});
+            //changing purple orbs to yellow
             $(".background span:nth-child(8)").css({"color": "#CC9901"});
             $(".background span:nth-child(12)").css({"color": "#CC9901"});
-            //changing the light blue orbs to yellow
+            //changing the light blue orbs to red
             $(".background span:nth-child(0)").css({"color": "#7C0A01"});
             $(".background span:nth-child(2)").css({"color": "#7C0A01"});
             $(".background span:nth-child(4)").css({"color": "#7C0A01"});
@@ -44,7 +49,7 @@ function change() {
             $(".background span:nth-child(16)").css({"color": "#7C0A01"});
             $(".background span:nth-child(17)").css({"color": "#7C0A01"});
             $(".background span:nth-child(19)").css({"color": "#7C0A01"});
-            //changing the dark blue orbs to blue
+            //changing the dark blue orbs to black
             $(".background span:nth-child(1)").css({"color": "#000000"});
             $(".background span:nth-child(3)").css({"color": "#000000"});
             $(".background span:nth-child(6)").css({"color": "#000000"});
