@@ -1,3 +1,6 @@
+/*---------------------------------------------------------------------------------------*/
+/*
+                DESKTOP VIEW
 /*
             Fancy Moving Background
 */
@@ -488,14 +491,73 @@ footer p{
 /*
                 TABLET VIEW
 */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 912px) {
+    .header{
+        visibility: hidden;
+    }
 
+    .photos .head_shot{
+        padding-top: 20px;
+    }
+
+    .about_me{
+        position: relative;
+        grid-row: 3, 4;
+        display: grid;
+        grid-template-rows: 35% 50%;
+    }
+
+    .about_me_links{
+        background-color: #91A4AD; 
+        margin-bottom: 0px;
+    }
+
+    .skill_icon {
+        height: 100px;
+        width: auto;
+    }
+
+    .text_box{
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .social_icon {
+        height: 80px;
+        width: auto;
+        padding: 5px;
+    }
+
+    /*          FOOTER          */
+    footer {
+        position: relative;
+        height: 100px;
+        background-color: #1C4774;
+        margin-bottom: -80px;
+    }
+    
+    footer p{
+        font-size: 25px;
+        padding-right: 10%;
+        color:#DEDEDA;
+    }
+    
+    #footer-content{
+        height: 50px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    #credits{
+        color: green;
+        text-decoration: green wavy underline;
+    }
 }
 
 /*---------------------------------------------------------------------------------------*/
 /*
-                DESKTOP VIEW
+                MOBILE VIEW
 */
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 768px) {
 
 }
