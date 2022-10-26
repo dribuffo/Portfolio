@@ -500,11 +500,14 @@ footer p{
         padding-top: 20px;
     }
 
+    /*
+            Tablet - About Me
+    */
     .about_me{
         position: relative;
         grid-row: 3, 4;
         display: grid;
-        grid-template-rows: 35% 50%;
+        grid-template-rows: 50% 50%;
     }
 
     .about_me_links{
@@ -528,22 +531,23 @@ footer p{
         padding: 5px;
     }
 
-    /*          FOOTER          */
+    /*
+            Tablet - Footer
+    */
     footer {
         position: relative;
         height: 100px;
         background-color: #1C4774;
-        margin-bottom: -80px;
+        margin-bottom: -100px;
     }
     
     footer p{
         font-size: 25px;
-        padding-right: 10%;
         color:#DEDEDA;
     }
     
     #footer-content{
-        height: 50px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+        height: 50px; 
         padding-top: 25px;
         padding-bottom: 25px;
     }
@@ -558,6 +562,131 @@ footer p{
 /*
                 MOBILE VIEW
 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
+    body{
+        display: grid;
+        grid-template-rows: auto;
+        background: #44729b;
+    }
 
+    .background span {
+        display: none;
+    }
+
+    /* 
+            Mobile - Photos 
+    */
+    .photos .head_shot img{
+        margin-left: 20%;
+    }
+
+    .photos_text{
+        font-size: 30px;
+        font-weight:bold;
+        text-align: center;
+    }
+
+    .about_me{
+        margin-bottom: 10%;
+    }
+
+    /*
+            Mobile - Projects
+    */
+    .projects{
+        position: relative;
+        grid-row: 4, 5;
+        display: block;
+    }
+
+    #project1, #project2, #project3, #project4, #project5, #project6 {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+
+    .tech_stack_icon{
+        height: 80px;
+        width: auto;
+    }
+
+    /*
+            Mobile - Contact Me
+    */
+    .contact_me{
+        position: relative;
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 100%;
+    }
+    
+    .left_side{
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    
+    .left_side .email_button{
+        background-color: #91A4AD;
+        box-shadow: 2px 2px 2px 2px;
+        border-radius: 25px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    
+    .left_side .linkedin_button{
+        background-color: #91A4AD;
+        box-shadow: 2px 2px 2px 2px;
+        border-radius: 25px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    
+    .right_side{
+        background-color: #91A4AD;
+        box-shadow: 2px 2px 2px 2px;
+        text-align: center;
+        text-justify: center;
+        border-radius: 25px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    input[type=text]{
+        padding: 0px; 
+        border: 1px solid #ccc;
+        border-radius: 4px; 
+        margin-top: 0px; 
+        margin-bottom: 0px; 
+    }
+    /*
+            Mobile - Footer
+    */
+    footer {
+        position: relative;
+        text-align: start;
+        height: 200px;
+        background-color: #1C4774;
+        margin-bottom: -100px;
+    }
+    
+    footer p{
+        font-size: 25px;
+        color:#DEDEDA;
+    }
+    
+    #footer-content{
+        height: 0px; 
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
 }
